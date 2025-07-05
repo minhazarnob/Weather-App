@@ -1,0 +1,17 @@
+
+*{
+    margin:0rem;
+    padding:0rem;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: normal;
+    color:white;
+}
+
+.app{
+    min-height:100vh;
+    display:grid;
+    background-color:#0065F8;
+    background-image:linear-gradient(160deg,#0065F8 0%,#00FFDE 100%);
+}
