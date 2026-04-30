@@ -15,7 +15,7 @@ const Weather = () => {
       alert("Please Enter City Name");
       return;
     }
-    const url = `http://api.weatherapi.com/v1/current.json?key=0cc3c22d678e46b7bf1134443250307&q=${city}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=0cc3c22d678e46b7bf1134443250307&q=${city}`;
 
 
     try {
@@ -58,10 +58,10 @@ const Weather = () => {
         {weather?(
           <>
             <img src={weather.condition_icon} alt='condition' className='weather-icon'/>
-            <h3 className='temperature'>{weather.temperature}°</h3>
+            <h3 className='temperature'>{weather.temperature}°C</h3>
             <h3 className='location'>{weather.location},{weather.country}</h3>
             <h3 className='condition'>{weather.condition}</h3>
-            <h3 className='feels-like'>Feels like {weather.feels_like}°</h3>
+            <h3 className='feels-like'>Feels like {weather.feels_like}°C</h3>
 
             <div className='weather-data'>
 
